@@ -8,7 +8,7 @@ fn main() {
         bins[days] += 1;
     }
 
-    // NOTE: This is a very naive solution -- reinterpreting the indices would remove the need for folding
+    // NOTE: This is a naive solution -- reinterpreting the indices would remove the need for folding
     for day in 0..256 {
         let mut new = 0;
 
@@ -17,7 +17,7 @@ fn main() {
                 new = count
             }
 
-            if days_left != 8 {
+            if days_left < 8 {
                 bins[days_left] = bins[days_left + 1]
             }
             
@@ -30,7 +30,7 @@ fn main() {
         bins[6] += new;
 
         // PART 1 //
-        if day == 80 {
+        if day == 79 {
             println!("Part 1: {}", bins.iter().sum::<u64>());
         }
     }
