@@ -1,8 +1,4 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
+pub fn read_input(day: u32) -> String {
+    std::fs::read_to_string(format!("./inputs/day{}.txt", day))
+        .expect("No input file found")
 }

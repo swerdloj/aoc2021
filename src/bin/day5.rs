@@ -4,7 +4,7 @@ fn main() {
 }
 
 fn solve(diagonals: bool) -> usize {
-    let input = std::fs::read_to_string("./inputs/day5.txt").unwrap();
+    let input = aoc2021::read_input(5);
 
     let mut crossings = std::collections::HashMap::new();
 

@@ -1,5 +1,5 @@
 fn main() {
-    let input = std::fs::read_to_string("./inputs/day3.txt").unwrap();
+    let input = aoc2021::read_input(3);
 
     // PART 1 //
 

@@ -67,7 +67,7 @@ impl Board {
 }
 
 fn main() {
-    let input = std::fs::read_to_string("./inputs/day4.txt").unwrap();
+    let input = aoc2021::read_input(4);
 
     // Boards are a 5x5 grid
     let mut boards = Vec::new();
